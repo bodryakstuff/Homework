@@ -7,5 +7,5 @@ Console.WriteLine ("Число чётное");
 }
 else 
 {
-Console.WriteLine ("Число нечётное");
+Console.WriteLine ("Число не является чётным");
 };
