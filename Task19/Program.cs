@@ -20,4 +20,4 @@ else
         Console.WriteLine("Число - не палиндром");
     }
 }
-Console.WriteLine(a, b, c, d);
+Console.Write($"{b} ");
