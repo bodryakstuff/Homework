@@ -80,6 +80,14 @@ double result = Dlin(x1, y1, x2, y2);
 Console.WriteLine(Math.Round(result, 2, MidpointRounding.ToZero));
 
 
+for (int i = 0; i < length; i++)
+{
+    
+}
+
+
+
+
 
 
 
