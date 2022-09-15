@@ -46,4 +46,4 @@ int razm = Convert.ToInt32(Console.ReadLine());
 double[] arr = CreateArrayRndDouble(razm, 1, 10);
 PrintArray(arr);
 double res = BolsheMenshe (arr);
-Console.WriteLine ($"Сумма элементов на нечётных позициях = {res}");
+Console.WriteLine ($"Разницуа наибольшего и наменьшего элементов = {res}");
