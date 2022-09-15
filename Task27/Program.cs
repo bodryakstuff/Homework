@@ -7,4 +7,3 @@ for (i = 0; a > 0; a = a / 10)
         i = i + (a % 10);
     }
 Console.WriteLine ($"Сумма цифр числа {c} = {i}");
-
