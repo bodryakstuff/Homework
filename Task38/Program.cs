@@ -2,14 +2,14 @@
 
 // [3.5, 7.1, 22.9, 2.3, 78.5] -> 76.2
 
-double[] CreateArrayRndDouble(int size, int min, int max)
+double[] CreateArrayRndDouble(int size, int max)
 {
     double[] array = new double[size];
     Random rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        array[i] = rnd.NextDouble() * 100;
-        Math.Round(array[i], 3, MidpointRounding.AwayFromZero);
+        array[i] = rnd.NextDouble() * max;
+        array[i] = Math.Round(array[i], 3, MidpointRounding.AwayFromZero);
     }
     return array;
 }
@@ -37,13 +37,13 @@ double BolsheMenshe(double[] array)
 
     }
     result = max - min;
-    Math.Round(result, 2, MidpointRounding.AwayFromZero);
+    result = Math.Round(result, 3, MidpointRounding.AwayFromZero);
     return result;
 }
 
 Console.WriteLine("Введите размер массива: ");
 int razm = Convert.ToInt32(Console.ReadLine());
-double[] arr = CreateArrayRndDouble(razm, 1, 10);
+double[] arr = CreateArrayRndDouble(razm, 999);
 PrintArray(arr);
 double res = BolsheMenshe (arr);
-Console.WriteLine ($"Разницуа наибольшего и наменьшего элементов = {res}");
+Console.WriteLine ($"Разница наибольшего и наменьшего элементов = {res}");
