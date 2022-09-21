@@ -41,20 +41,15 @@ void AverageColumns(double[,] matrix)              //метод для подс�
         {
             temp += matrix[i, j];
         }
-        temp = Math.Round(temp, 1, MidpointRounding.AwayFromZero);
-        Console.Write($"{temp / matrix.GetLength(0)}  ");
+        temp = Math.Round(temp / matrix.GetLength(0), 2, MidpointRounding.AwayFromZero);
+        Console.Write($"{temp}  ");
     }
-
-
 }
-
-
 
 Console.WriteLine("Введите количество строк");
 int str = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов");
 int stlb = Convert.ToInt32(Console.ReadLine());
-
 double[,] array2d = CreateMatrixRndInt(str, stlb, 1, 9);
 PrintArray(array2d);                                                    //поменял переменную в первом методе на дабл чтобы среднее арифметическое считалось с запятой
 AverageColumns(array2d);
